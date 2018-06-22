@@ -6,7 +6,7 @@
 /*   By: vgryshch <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/30 13:58:17 by vgryshch          #+#    #+#             */
-/*   Updated: 2018/03/31 13:53:55 by vgryshch         ###   ########.fr       */
+/*   Updated: 2018/06/22 11:54:31 by vgryshch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,12 +36,12 @@ char	**ft_argv_init(void)
 	new = (char**)malloc(sizeof(char*) * 12);
 	new[0] = ft_strdup("../resources/filler_vm");
 	new[1] = ft_strdup("-f");
-	new[2] = ft_strdup("../resources/maps/map00");
+	new[2] = ft_strdup("../resources/maps/map02");
 	new[3] = ft_strdup("-p1");
 	new[4] = ft_strdup("../vgryshch.filler");
 	new[5] = ft_strdup("-p2");
 	new[6] = ft_strdup("../resources/players/carli.filler");
-	new[7] = ft_strdup("-q");
+	new[7] = ft_strdup("| visualization.c");
 	new[8] = NULL;
 	return (new);
 }
@@ -59,7 +59,7 @@ int		main(void)
 	iter.res = 0;
 	iter.pid = 0;
 	argv = ft_argv_init();
-	while (++(iter.i) < 6)
+	while (++(iter.i) < 2)
 	{
 		iter.j = -1;
 		if ((iter.pid = fork()) == 0)
