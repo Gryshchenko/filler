@@ -8,7 +8,7 @@ To place a piece, he needs to cross the player's ONE cell and only ONE, and not 
 The strategy is to check the relative position in comparison with the applicant. <br />
 Then close enough from the opponent, surrounding it, keeping a sufficient distance.<br />
 
-![strategy](./readme/pic1.png  =250x250)
+![strategy](./readme/pic1.png | width=250)
 
 ### How run:
  * ./resources/filler_vm -f ./resources/maps/map01  -p1 ./vgryshch.filler -p2 ./resources/players/carli.filler
